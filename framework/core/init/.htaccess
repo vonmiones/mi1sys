@@ -1,0 +1,5 @@
+index -> bootloader
+			|
+			|->loader
+				|
+				|-> init

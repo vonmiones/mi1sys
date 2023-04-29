@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div id="input" allowediting></div>
+	<div id="output"></div>
+	<script>
+
+	function rota(str, a) {
+	  let result = '';
+	  let used = new Set();
+	  for (let i = 0; i < str.length; i++) {
+	    let char = str[i];
+	    let charCode = str.charCodeAt(i);
+	    if ((charCode >= 65 && charCode <= 90) || (charCode >= 97 && charCode <= 122) || (charCode >= 48 && charCode <= 57) || (charCode == 32)) {
+	      let newChar = String.fromCharCode((charCode - ((charCode >= 65 && charCode <= 90)?65:(charCode >= 97 && charCode <= 122)?97:(charCode >= 48 && charCode <= 57)?48:0) + a) % ((charCode >= 65 && charCode <= 90)?26:(charCode >= 97 && charCode <= 122)?26:(charCode >= 48 && charCode <= 57)?10:1) + ((charCode >= 65 && charCode <= 90)?65:(charCode >= 97 && charCode <= 122)?97:(charCode >= 48 && charCode <= 57)?48:32));
+	      while(used.has(newChar)) {
+	        a += 1;
+	        newChar = String.fromCharCode((charCode - ((charCode >= 65 && charCode <= 90)?65:(charCode >= 97 && charCode <= 122)?97:(charCode >= 48 && charCode <= 57)?48:0) + a) % ((charCode >= 65 && charCode <= 90)?26:(charCode >= 97 && charCode <= 122)?26:(charCode >= 48 && charCode <= 57)?10:1) + ((charCode >= 65 && charCode <= 90)?65:(charCode >= 97 && charCode <= 122)?97:(charCode >= 48 && charCode <= 57)?48:32));
+	      }
+	      char = newChar;
+	      used.add(char);
+	    }
+	    result += char;
+	  }
+	  return result;
+	}
+	console.log(rota("HELLO WORLD! 123", 5));  // Output: "MJQLR BTWQI! 123"
+	console.log(rota("HELLO WORLD 123", 5));  // Output: "MJQLR BTWQI 123"
+	
+
+	</script>
+</body>
+</html>

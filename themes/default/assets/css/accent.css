@@ -1,0 +1,54 @@
+.orange-accent {
+      --fa-secondary-opacity: 1.0;
+      --fa-primary-color: rgb(4, 56, 161);
+      --fa-secondary-color: rgb(255,61,0);
+}
+.orange-accent-logo {
+      --fa-secondary-opacity: 1.0;
+      --fa-primary-color: rgb(255,61,0);
+      --fa-secondary-color: rgb(4, 56, 161);
+}
+.bg-yellow-1 {
+      background-color: #f7d200;
+}
+.border-yellow-1 {
+      background-color: #f7d200;
+}
+
+.bg-yellow-2 {
+      background-color: #eec91d;
+}
+.border-yellow-2 {
+      background-color: #eec91d;
+}
+
+.bg-orange-1 {
+      background-color: #fe6a14;
+      color: white;
+}
+.border-orange-1 {
+      border-color: #fe6a14;
+}
+
+.bg-red-1 {
+      background-color: #ea1f21;
+}
+.border-red-1 {
+      border-color: #ea1f21;
+}
+
+.bg-green-1 {
+      background-color: #1F8A70;
+}
+.border-green-1 {
+      border-color: #1F8A70;
+}
+
+
+.bg-blue-1 {
+      background-color: #00425A;
+}
+.border-blue-1 {
+      border-color: #00425A;
+}
+

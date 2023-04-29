@@ -1,0 +1,222 @@
+Tables:
+
+Procurement
+	•	RFQ (Request for Quotation) Number
+	•	RFP (Request for Proposal) Number
+	•	Bid Invitation Number
+	•	Bid Evaluation Report Number
+	•	Purchase Request Number
+	•	Purchase Order Number
+
+Supplier Information
+	•	Supplier Name
+	•	Supplier Contact Person
+	•	Supplier Contact Information (Email, Phone)
+
+Bid Information
+	•	Bid Number
+	•	Bid Date
+	•	Bid Opening Date
+	•	Bid Evaluation Start Date
+	•	Bid Evaluation End Date
+
+Bidder Information
+	•	Bidder List
+	•	Bidder Technical Proposal
+	•	Bidder Financial Proposal
+
+Contract Information
+	•	Contract Agreement Number
+	•	Contract Start Date
+	•	Contract End Date
+
+Payment Information
+	•	Invoice Number
+	•	Invoice Date
+	•	Payment Date
+
+Delivery Information
+	•	Delivery Date
+	•	Warranty Start Date
+	•	Warranty End Date
+
+Terms and Conditions
+	•	Payment Terms
+	•	Delivery Terms
+	•	Contract Terms
+
+Approval Information
+	•	Purchasing Department
+	•	Purchasing Officer
+	•	Approval Authority
+	•	Approval Date
+
+Budget Information
+	•	Budget
+	•	Budget Line Item
+	•	Fund Source
+
+Purchase Information
+	•	Purpose of Purchase
+	•	Justification for Procurement
+	•	Evaluation Criteria
+	•	Award Recommendation
+	•	Award Decision
+	•	Awarded Supplier
+	•	Award Amount
+
+Delivery Information
+	•	Delivery Address
+	•	Delivery Method
+	•	Payment Information
+	•	Payment Method
+
+Invoicing Requirements
+	•	Invoicing Requirements
+
+Inspection Requirements
+	•	Inspection Requirements
+
+Acceptance Criteria
+	•	Acceptance Criteria
+
+Warranty Information
+	•	Defect Liability Period
+	•	Warranty
+	•	Warranty Requirements
+	•	Warranty Claims
+	•	Warranty Repairs
+	•	Warranty Replacements
+
+Post-Delivery Support
+	•	Post-Delivery Support
+	•	Post-Delivery Maintenance
+
+Termination Clauses
+	•	Termination Clauses
+	•	Contract Renewal Options
+	
+
+----------------------------------------------------------------------------------------
+
+Equipment
+	•	Equipment Information
+	•	Equipment ID
+	•	Equipment Name
+	•	Equipment Type
+	•	Equipment Model
+	•	Equipment Serial Number
+	•	Equipment Asset Tag Number
+	•	Equipment Description
+	•	Equipment Location
+	•	Equipment Department
+	•	Equipment User
+	•	Equipment Cost
+	•	Equipment Purchase Date
+	•	Equipment Warranty Start Date
+	•	Equipment Warranty End Date
+
+Maintenance Information
+	•	Equipment Maintenance Schedule
+	•	Equipment Maintenance History
+	•	Equipment Parts History
+
+Equipment Status
+	•	Equipment Status (Active, Inactive, Retired)
+	•	Equipment Condition (New, Used, Refurbished)
+	•	Equipment Availability (In Stock, Out of Stock, On Order)
+
+Equipment Documentation
+	•	Equipment Images
+	•	Equipment Drawings
+	•	Equipment Manuals
+	•	Equipment Supplier Information
+
+Equipment History
+	•	Equipment Installation Date
+	•	Equipment Retirement Date
+	•	Equipment Disposal Date
+	•	Equipment Notes
+	•	Equipment Attachments
+
+Equipment Characteristics
+	•	Equipment ID (Primary Key, Foreign Key referencing Equipment table)
+	•	Equipment Parent-Child Relationship (for sub-assemblies or components)
+	•	Equipment Weight
+	•	Equipment Height
+	•	Equipment Width
+	•	Equipment Length
+	•	Equipment Capacity
+	•	Equipment Power Rating
+	•	Equipment Voltage
+	•	Equipment Current
+	•	Equipment Frequency
+	•	Equipment Efficiency
+	•	Equipment Operating Temperature
+	•	Equipment Operating Pressure
+	•	Equipment Operating Humidity
+	•	Equipment Operating Altitude
+
+
+Equipment Compliance Information:
+	•	Equipment ID (Primary Key, Foreign Key referencing Equipment table)
+	•	Equipment Safety Standards
+	•	Equipment Environmental Standards
+	•	Equipment Regulatory Compliance
+	•	Equipment Energy Efficiency
+	•	Equipment Emissions
+	•	Equipment Noise Level
+	•	Equipment Vibration Level
+	•	Equipment Shock Level
+
+Equipment Performance Metrics:
+	•	Equipment ID (Primary Key, Foreign Key referencing Equipment table)
+	•	Equipment Life Expectancy
+	•	Equipment MTBF (Mean Time Between Failures)
+	•	Equipment MTTR (Mean Time To Repair)
+	•	Equipment Reliability
+	•	Equipment Availability
+	•	Equipment Maintainability
+	•	Equipment Serviceability
+	•	Equipment Operability
+
+
+Equipment Performance Metrics
+	•	Equipment Performance Metrics ID (Primary Key)
+	•	Equipment ID (Foreign Key to Equipment table)
+	•	Equipment Operating Temperature (float)
+	•	Equipment Operating Pressure (float)
+	•	Equipment Operating Humidity (float)
+	•	Equipment Operating Altitude (float)
+	•	Equipment Efficiency (float)
+	•	Equipment Emits (float)
+	•	Equipment Noise Level (float)
+	•	Equipment Vibration Level (float)
+	•	Equipment Shock Level (float)
+	•	Equipment Life Expectancy (int)
+	•	Equipment MTBF (float)
+	•	Equipment MTTR (float)
+	•	Equipment Reliability (float)
+	•	Equipment Availability (float)
+	•	Equipment Maintainability (float)
+	•	Equipment Serviceability (float)
+	•	Equipment Operability (float)
+
+
+Equipment Maintenance History
+	•	Maintenance ID
+	•	Equipment ID (FK)
+	•	Maintenance Date
+	•	Maintenance Type (Preventive, Corrective, Overhaul)
+	•	Maintenance Cost
+	•	Maintenance Description
+	•	Maintenance Notes
+	•	Maintenance Images
+	•	Maintenance Drawings
+	•	Maintenance Parts
+	•	Maintenance Parts Cost
+	•	Maintenance Parts Description
+	•	Maintenance Parts Serial Number
+	•	Maintenance Parts Quantity
+	•	Maintenance Technician
+	•	Maintenance Approver
